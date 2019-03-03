@@ -4,6 +4,7 @@ Real time Ray Tracing and global illumination engine.
 
 
 --------Features--------
+
 CPU Real time ray tracer in resolutions arround 300x300, and the resolution can be changed on the fly. 
 You can fly into the scene using ZQSD and arrows.
 The rendering is accelerated with a BVH (see Geometry/bvh_scene).
@@ -36,6 +37,7 @@ Be sure to launch the release version, and launch it with Ctrl + F5 to avoid the
 
 
 --------Important files--------
+
 main.cpp:
 - Select the scene, and other settings
 
@@ -56,6 +58,7 @@ TriangleMultipleTexture.hpp:
 
 
 --------Authorship and prodution--------
+
 This is a practical work project by Ronan Cailleau.
 The base of the project is by Fabrice Lamarche. 
 The course is by Fabrice Lamarche and Remi Cozot. 
