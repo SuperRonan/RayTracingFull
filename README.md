@@ -7,14 +7,14 @@ Real time Ray Tracing and global illumination engine.
 
 CPU Real time ray tracer in resolutions arround 300x300, and the resolution can be changed on the fly. 
 You can fly into the scene using ZQSD and arrows.
-The rendering is accelerated with a BVH (see Geometry/bvh_scene).
+The rendering is accelerated with a BVH.
 There are different rendering modes: "realistic" phong, normals, uv, acceleration strucure heat map and depth.
 
 The pre calculation of the shadows is currently desactivated due to some little artifacts, a longer pre-computation time 
 and of course less precise shadows. It can be turned on by uncommenting the line to launch it in the main. 
-But it offers faster performances (and soft shadows thanks to the interpolation at the edges).  
+It offers faster performances (and soft shadows thanks to the interpolation at the edges). Mind the shadow scale, or it will take too long to compute.
 
-There is the beggining of a global illumination mode, but it is still very noisy, biased, and wrong.
+There is the beggining of a global illumination mode, but it is still very noisy, biased, and the result is wrong.
 The result of the global illumination should be very different to the "basic" ray tracing.
 The "basic" ray tracing uses only point lights for ligthing and the global illumination only samples from surface lights.
 
@@ -31,7 +31,7 @@ In the dependencies_ima folder, execute setup.bat to setup the dependencies.
 
 You can launch the VS 2017 project with RayCasting_git/project2017/RayCasting.sln.
 
-The projects works with x64 configuration and should also work with win32 (not sure).
+The projects works with x64 configuration and should also work with win32.
 Be sure to launch the release version, and launch it with Ctrl + F5 to avoid the debugger and improve performances.  
 
 
@@ -39,7 +39,7 @@ Be sure to launch the release version, and launch it with Ctrl + F5 to avoid the
 --------Important files--------
 
 main.cpp:
-- Select the scene, and other settings
+- Select the scene, and other settings (shadows, sub sampling, ...)
 
 Scene.h:
 - Rendering of the scene (compute, sendRay, phong (different versions))
@@ -61,6 +61,6 @@ TriangleMultipleTexture.hpp:
 
 This is a practical work project by Ronan Cailleau.
 The base of the project is by Fabrice Lamarche. 
-The course is by Fabrice Lamarche and Remi Cozot. 
+Based on a course by Fabrice Lamarche and Remi Cozot. 
 
-This is a practical work project where I tried a lot of things, so the code is a dirty at some points.  
+This is a practical work project where I tried a lot of things, so the code can be dirty.  
