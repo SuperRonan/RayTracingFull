@@ -20,6 +20,8 @@ The "basic" ray tracing uses only point lights for ligthing and the global illum
 The project contains different scenes. You can select the scene by uncomenting its init function at the begining of the main.
 The number of triangles of the scene is printed in the console. 
 
+There is also a skybox (file skybox.png). It doesn't look that bad as long as you don't watch too much up or down. 
+
 --------Instalation procedure--------
 
 This is a Visual Studio 2017 project.
